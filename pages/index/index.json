@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Accordion",
+  "usingComponents": {
+    "wux-accordion-group": "/component/wux/accordion-group/index",
+    "wux-accordion": "/component/wux/accordion/index"
+  }
+}

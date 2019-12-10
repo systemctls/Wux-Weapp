@@ -1,0 +1,22 @@
+{
+    "components": [
+        "accordion",
+        "fabbutton",
+        "image",
+        "grid",
+        "layout",
+        "animation-group",
+        "tabs",
+        "list",
+        "prompt",
+        "timeago",
+        "gallery",
+        "landscape",
+        "skeleton",
+        "virtualList",
+        "sticky"
+    ],
+    "themes": {
+        "light": "white"
+    }
+}
