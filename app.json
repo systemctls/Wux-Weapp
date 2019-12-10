@@ -3,11 +3,14 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
+  "usingComponents": {
+    "navbar": "/component/navbar/navbar"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

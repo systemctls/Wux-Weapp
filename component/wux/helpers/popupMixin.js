@@ -5,7 +5,7 @@ const DEFAULT_TRIGGER = 'onClick'
 const CELL_NAME = '../cell/index'
 const FIELD_NAME = '../field/index'
 
-const defaultToolbar = {
+const defaultnavbar = {
     title: '请选择',
     cancelText: '取消',
     confirmText: '确定',
@@ -30,9 +30,9 @@ export default function popupMixin(selector = '#wux-picker', platformProps = def
     return Behavior({
         behaviors: [eventsMixin({ defaultEvents })],
         properties: {
-            toolbar: {
+            navbar: {
                 type: Object,
-                value: defaultToolbar,
+                value: defaultnavbar,
             },
             trigger: {
                 type: String,
@@ -262,7 +262,7 @@ export default function popupMixin(selector = '#wux-picker', platformProps = def
             Object.assign(defFields.computed = (defFields.computed || {}), {
                 classes: ['prefixCls', function(prefixCls) {
                     const wrap = classNames(prefixCls)
-                    const toolbar = `${prefixCls}__toolbar`
+                    const navbar = `${prefixCls}__navbar`
                     const inner = `${prefixCls}__inner`
                     const cancel = classNames(`${prefixCls}__button`, {
                         [`${prefixCls}__button--cancel`]: true
@@ -275,7 +275,7 @@ export default function popupMixin(selector = '#wux-picker', platformProps = def
 
                     return {
                         wrap,
-                        toolbar,
+                        navbar,
                         inner,
                         cancel,
                         confirm,
