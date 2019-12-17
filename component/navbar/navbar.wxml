@@ -1,16 +1,16 @@
 <view class="navbar" style="{{navigationBarHeight}}">
-  <view style="{{'height: ' + statusBarHeight}}"></view>
-  <view class='title-container'>
-    <view class="capsule {{(back && home) ? 'capsule-theme' : ''}}" wx:if="{{ back || home }}">
-      <view bindtap='back' wx:if="{{back}}">
-        <image src='./blackback.png'></image>
-      </view>
-      <view wx:if="{{ back && home }}" style="width:1px;background:#333;"></view>
-      <view bindtap='backHome' wx:if="{{home}}">
-        <image src='./home.png'></image>
-      </view>
+    <view style="{{'height: ' + statusBarHeight}}"></view>
+    <view class='title-container'>
+        <view class="capsule {{(back && home) ? 'capsule-theme' : ''}}" wx:if="{{ back || home }}">
+            <view bindtap='back' wx:if="{{back}}">
+                <image src='./blackback.png'></image>
+            </view>
+            <view wx:if="{{ back && home }}" style="width:1px;background:#333;"></view>
+            <view bindtap='backHome' wx:if="{{home}}">
+                <image src='./home.png'></image>
+            </view>
+        </view>
+        <view class="title {{ textLeft ? 'text-left': ''}}">{{text}}</view>
     </view>
-    <view class="title {{ textLeft ? 'text-left': ''}}">{{text}}</view>
-  </view>
 </view>
-<view style="{{'height: ' + navigationBarHeight}};background: white;"></view>
+<view style="{{navigationBarHeight}};background: white;"></view>

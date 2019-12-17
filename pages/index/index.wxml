@@ -1,8 +1,9 @@
 <view class="page">
-<navbar text='测试'/>
-<!-- <navbar title="标题" titleCenter='true'></navbar> -->
+    <navbar text='测试'/>
+    <!-- <navbar title="标题" titleCenter='true'></navbar> -->
     <view class="page__bd">
         <view class="sub-title">1</view>
         <wux-navbar leftText="NavBar"/>
     </view>
+    <view>123</view>
 </view>
